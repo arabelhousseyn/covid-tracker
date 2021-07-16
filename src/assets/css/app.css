@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #010101;
+    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.white{
+    color: whitesmoke;
+}
+
+.red{
+    color: #da2e2d;
+}
+
+.boxColor{
+    background-color: #262221;
+}
+.center{
+    text-align: center;
+}
+.green{
+    color: #465e1b;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.leftMap{
+    flex: 40%;
+}
+
+.rightItem{
+    flex: 15%;
+    margin: 10px;
+}
+
+.defaultLeft{
+    flex: 60%;
+}
+
+.defaultRight{
+    flex: 40%;
+}
+
+
+
+.boxRight{
+    background-color: #262221;
+    color: white;
+    padding: 20px;
+    width: auto;
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.borderBox{
+    border-radius: 5px;
+}
+
+
+.boxLeft{
+    border: 1px solid rgb(78, 78, 78);
+    width: auto;
+    height: 450px;
+}
+
+
+.header{
+   margin: 20px;
+    text-align: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+
+._24{
+  font-size: 30px;
+  margin: 10px 0 10px 0;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+._btm{
+    margin-bottom: 6px;
+    border-bottom: 1px solid rgb(78, 78, 78);
+    padding: 6px;
+    cursor: pointer;
+}
+
+.specialInput{
+    outline: none;
+    margin-bottom: 10px;
+    text-align: center;
+    border: none;
+    border-bottom: 5px solid rgb(20, 20, 20);
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  #mapp {
+    height: 100%;
+    width: 100%;
+  }
+
+  .info{
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      margin-top: 50px;
+  }
+
+  a{
+      text-decoration: none;
+      color: white;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .leftMap{
+        flex: 100%;
+    }
+    
+    .rightItem{
+        flex: 50%;
+        margin: 10px;
+    }
+    
+    .defaultLeft{
+        flex: 100%;
+    }
+    
+    .defaultRight{
+        flex: 100%;
+    }
+  }

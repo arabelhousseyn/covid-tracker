@@ -1,18 +1,25 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div class="home">
+        <div class="container">
+            <map-comp />
+            <confirmed-comp />
+            <death-comp />
+            <recovred-comp />
+        </div>
+    </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import mapComp from '../components/mapComp.vue'
+import confirmedComp from '../components/confirmedComp.vue'
+import deathComp from '../components/daethComp.vue'
+import recovredComp from '../components/recoverdComp.vue'
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+    components : {
+        mapComp,
+        confirmedComp,
+        deathComp,
+        recovredComp
+    }
 }
 </script>
